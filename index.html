@@ -7,13 +7,37 @@
     <title>calculaitor</title> <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class=numb>
-        
-        <input type="number" id="peso" class="peso">
-        <input type="number" id="altura" class="altura" min="0" max="3" step="0.1">
-        <button id=confirm >calcular</button>
-
-    </div>
+    <header id="s">Calculadora de Indice de Massa Corporal</header>
     
-</body>
+    <div class=numb>
+        <p id="a"></p>
+        <ul>
+            <label data-domain="Kg">
+        <li>  <input type="number" id="peso" class="peso" placeholder="Peso" min="0" ></li>
+    </label>
+        <li> +</li>
+            <label data-domain="M">
+        <li>  <input type="number" id="altura" class="altura" placeholder="Altura"  min="0" max="3" step="0.1"></li>
+    </label>
+        <li>  <button id=confirm onclick="calcular()" >calcular</button></li>
+        </ul>
+    </div>
+    <script>
+            
+        function calcular() {
+            certo = true;
+            
+            let x = document.getElementById("peso").value;
+            let y = document.getElementById("altura").value;
+            let z = +x/ y**2;
+            
+           
+
+            if (x < 0||y < 0||y > 3) {document.getElementById("a").innerHTML="valor inválido";
+            }else {document.getElementById("a").innerHTML= z;}
+        
+
+        }
+    </script>
+</body> 
 </html>
