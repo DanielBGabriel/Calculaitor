@@ -10,7 +10,10 @@
     <header id="s">Calculadora de Indice de Massa Corporal</header>
     
     <div class=numb>
-        <p id="a"></p>
+        <div class="resp">
+        <p id="valor"></p>
+        <p id="imc"></p>
+        </div>
         <ul>
             <label data-domain="Kg">
         <li>  <input type="number" id="peso" class="peso" placeholder="Peso" min="0" ></li>
@@ -21,6 +24,7 @@
     </label>
         <li>  <button id=confirm onclick="calcular()" >calcular</button></li>
         </ul>
+        
     </div>
     <script>
             
@@ -33,10 +37,17 @@
             
            
 
-            if (x < 0||y < 0||y > 3) {document.getElementById("a").innerHTML="valor inválido";
-            }else {document.getElementById("a").innerHTML= z;}
-        
-
+            if (x < 0||y < 0||y > 3) {document.getElementById("valor").innerHTML="valor inválido";
+            }else {document.getElementById("valor").innerHTML= z;}
+            
+            if (x < 0||y < 0||y > 3) {document.getElementById("imc").innerHTML=" ";}    
+            else if(z<16.9){document.getElementById("imc").innerHTML="Muito abaixo do peso"}
+            else if(z>16.9 && z<18.4){document.getElementById("imc").innerHTML="Abaixo do peso"}
+            else if(z>18.4 && z<24.9){document.getElementById("imc").innerHTML="Normal"}
+            else if(z>24.9 && z<29.9){document.getElementById("imc").innerHTML="Acima do peso"}
+            else if(z>29.9 && z<34.9){document.getElementById("imc").innerHTML="Obesidade grau I"}
+            else if(z>34.9 && z<40){document.getElementById("imc").innerHTML="Obesidade grau II"}
+            else {document.getElementById("imc").innerHTML="Obesidade grau III"}
         }
     </script>
 </body> 
