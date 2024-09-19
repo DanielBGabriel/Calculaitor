@@ -31,6 +31,7 @@ body{
     top: 30%;
     left: 33%;
     height: 25%;
+    background-color: rgb(200, 203, 216);
     
  
    
@@ -69,10 +70,10 @@ ul{
     
 
 }
-.numb{
-    background-color: rgb(200, 203, 216);
 
-}
+    
+
+
 label::after{
     content: attr(data-domain);
     position: absolute;
