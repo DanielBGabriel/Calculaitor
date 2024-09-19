@@ -2,25 +2,36 @@
     margin: 0;
     padding: 0;
 }
+@font-face{
+font-family: lcdfont;
+    src: url("./font/digital-7.ttf")  format('truetype');
+}
 body{
-    background: black;
+    background-color: white;
+    background-image: url(./img/wpp.png);
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 .numb{
     text-align: center;
-    border: solid 5px gray;
+    border: solid 5px black;
     display: flex;
-    padding: 1cm;
+    padding: 1.5cm;
     justify-content: space-around;
     align-items: center;
     justify-content: center;
     width: 30%;
     color: black;
     background:whitesmoke;
+    background-image:url(./img/Pl1.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: auto;
     position: absolute;
     top: 30%;
     left: 33%;
     height: 25%;
+    
  
    
 }
@@ -34,6 +45,7 @@ ul{
     list-style: none;
     font-size: xx-large;
 }
+
 .numb button  {
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
@@ -41,7 +53,7 @@ ul{
     padding: 0.2cm;
     transition-duration: 0.7s;
     background-color: white;
-
+    margin: 20px;
     cursor: pointer;
 }
 
@@ -57,6 +69,10 @@ ul{
     
 
 }
+.numb{
+    background-color: rgb(200, 203, 216);
+
+}
 label::after{
     content: attr(data-domain);
     position: absolute;
@@ -65,12 +81,50 @@ label::after{
     left:2.4cm;
 }
 header{
-    color: white;
+    color: black;
     text-align: center;
     font-size: 2cm;
     margin: 1cm;
     font-family: fantasy;
+    text-shadow: 8px 10px gainsboro
 }
-body{
-    background-image: linear-gradient(to right,black,rgb(48, 48, 48),rgb(146, 144, 144));
+
+    
+   
+/* imagem */
+.result{
+    
+    float: left;
+    display: block;
+    
+    margin: 8%;
+    height: 300px;  
+    border: solid black  20px;
+    border-radius: 45px;
+    border-style: double;
+  
+}
+/* quadrado resposta */
+.resp{
+    background-color: green;
+    color: greenyellow;
+    border: solid rgb(0, 80, 0) 10px;
+    padding: 1%;
+    padding-left: 2% ;
+    padding-right:2% ;
+    margin: auto;
+    font-family: lcdfont;
+    font-size: xx-large;
+ 
+}
+/* quadrado dos valor*/
+.val{
+    background-color: ghostwhite;
+    border: solid black 5px;
+    margin: auto;
+    border-radius: 15px;
+
+}
+input{
+    border-radius: 10px;
 }
