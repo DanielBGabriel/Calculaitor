@@ -1,4 +1,5 @@
-        //deixa telinha invisivel
+           let Mn = document.getElementById("Mn")
+           //deixa telinha invisivel
            document.getElementById("resp").style.visibility = "hidden";
         function calcular() {
             certo = true;
