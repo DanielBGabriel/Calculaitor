@@ -12,6 +12,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     
 }
+
 .numb{
     text-align: center;
     border: solid 5px black;
@@ -87,7 +88,15 @@ header{
     font-size: 2cm;
     margin: 1cm;
     font-family: fantasy;
-    text-shadow: 8px 10px gainsboro
+    
+}
+header{
+
+    background: linear-gradient(to right,red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
     
