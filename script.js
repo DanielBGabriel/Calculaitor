@@ -16,13 +16,15 @@
 
             // arredondamento
             let Nz = Math.round(z * Math.pow(10, 2)) / Math.pow(10, 2);
-           
-            // verf. se valor é valido, arredonda z & deixa caixa visivel
+          
+            document.getElementById("resp").style.visibility = "visible"
+            
+                      // verf. se valor é valido, arredonda z & deixa caixa visivel
             if (x < 0||y < 0||y > 3) {
                 document.getElementById("valor").innerHTML="valor inválido";
             }else {
                 document.getElementById("valor").innerHTML= Nz; 
-                document.getElementById("resp").style.visibility = "visible"}
+                }
             
             // definição do valor, imagem & sfx
             if (x < 0||y < 0||y > 3) {
